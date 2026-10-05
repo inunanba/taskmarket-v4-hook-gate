@@ -1,0 +1,5 @@
+forge Version: 1.8.4
+solc 0.8.26 (foundry.toml)
+v20.19.2
+9.2.0
+anvil Version: 1.8.4

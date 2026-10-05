@@ -1,0 +1,16 @@
+{
+  "network": "Robinhood Chain testnet",
+  "chainId": 46630,
+  "rpcSource": "https://docs.robinhood.com/chain/connecting/",
+  "poolManager": "TBD - not officially listed for 46630; verify per docs/RUNBOOK.md section 2",
+  "taskGateHook": "TBD - not deployed by this submission",
+  "hookSalt": "TBD",
+  "owner": "TBD",
+  "adapters": ["TBD"],
+  "pools": [
+    { "currency0": "TBD", "currency1": "TBD", "fee": 3000, "tickSpacing": 60, "poolId": "TBD", "gatedActions": 1, "requiredStatus": "completed", "maxStaleness": 600, "maxTtl": 900 }
+  ],
+  "taskmarketSettlement": "Base Mainnet (off-chain to this deployment; https://docs.taskmarket.dev/reference/network)",
+  "deployedAt": "TBD",
+  "deployTx": "TBD"
+}

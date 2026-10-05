@@ -1,0 +1,9 @@
+No files changed, compilation skipped
+
+Ran 3 tests for test/fork/RobinhoodTestnetFork.t.sol:RobinhoodTestnetForkTest
+[PASS] test_fork_chainIdIsRobinhoodTestnet() (gas: 3241)
+[PASS] test_fork_gatedLifecycleOnLivePoolManager() (gas: 5313094)
+[PASS] test_fork_poolManagerHasCode() (gas: 8209)
+Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 3.57s (3.00s CPU time)
+
+Ran 1 test suite in 3.57s (3.57s CPU time): 3 tests passed, 0 failed, 0 skipped (3 total tests)

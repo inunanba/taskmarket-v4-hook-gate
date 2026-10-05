@@ -1,0 +1,17 @@
+{
+  "name": "taskgate-adapter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reference Taskmarket -> TaskGateHook adapter (read Taskmarket, preserve raw bytes, re-fetch, sign EIP-712 binding, optionally submit). Fails closed.",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "bin": { "taskgate-adapter": "src/cli.mjs" },
+  "scripts": {
+    "test": "node --test --test-reporter=spec test/*.test.mjs",
+    "vector": "node scripts/gen-vector.mjs ../test/fixtures/adapter-vector.json"
+  },
+  "dependencies": {
+    "viem": "2.57.3"
+  }
+}

@@ -1,0 +1,9 @@
+probe time (UTC): 2026-10-05T07:52:53Z
+rpc: https://rpc.testnet.chain.robinhood.com
+eth_chainId: 46630
+latest block: 129157136
+CREATE2 deployer 0x4e59b44847b379578588920cA78FbF26c0B4956C code bytes: 69
+candidate PoolManager 0x8366a39cc670b4001a1121b8f6a443a643e40951 code bytes: 24009 keccak: 0xbd3881180b547f5fe817545743cfb4343e96b1bc6640dcd70c106b0066e95626
+same address on reference rpc https://rpc.mainnet.chain.robinhood.com: keccak 0xbd3881180b547f5fe817545743cfb4343e96b1bc6640dcd70c106b0066e95626 (chain 4663)
+runtime bytecode IDENTICAL to reference
+candidate owner(): 0x9701fb0aDe1E269c8f64Ec0C7b3cfADB31A13A52

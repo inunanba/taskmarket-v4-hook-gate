@@ -1,0 +1,13 @@
+{
+  "url": "https://api.taskmarket.dev/api/tasks/0x9ab3d5e1ca795d87364e8b46ee7cc2c67244d66eaf0a0c2eb3784b74c8447654",
+  "httpStatus": 200,
+  "receivedAt": "2026-10-05T07:55:01.198Z",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Mon, 05 Oct 2026 07:55:01 GMT"
+  },
+  "sizeBytes": 10409,
+  "sha256": "0fc43bcd68d0680df40490ffa232483119347e9d8b6445aa6a15325adc048ee4",
+  "keccak256": "0x7f310f840fa6862bfae8873e66aaf8825f2a42457b7cc307fac207d63a5feeb4",
+  "note": "Untrusted Taskmarket response, preserved byte-for-byte before parsing."
+}

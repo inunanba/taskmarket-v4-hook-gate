@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "task": {
+    "id": "0x9ab3d5e1ca795d87364e8b46ee7cc2c67244d66eaf0a0c2eb3784b74c8447654",
+    "status": "open",
+    "expiryMs": 1791441692275,
+    "serverMs": 1791186901000,
+    "expiry": "2026-10-08T06:41:32.275Z"
+  },
+  "rawPath": "../evidence/live-taskmarket-probe/2026-10-05T07-55-01-198Z-9ab3d5e1-cbffec.body",
+  "sha256": "0fc43bcd68d0680df40490ffa232483119347e9d8b6445aa6a15325adc048ee4",
+  "evidenceHash": "0x7f310f840fa6862bfae8873e66aaf8825f2a42457b7cc307fac207d63a5feeb4"
+}

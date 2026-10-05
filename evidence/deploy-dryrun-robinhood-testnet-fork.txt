@@ -1,0 +1,23 @@
+# SIMULATION ONLY (no --broadcast, no key). 2026-10-05. Placeholder owner 0x...dEaD. The address below is a simulated CREATE2 prediction, NOT a deployment.
+No files changed, compilation skipped
+Script ran successfully.
+== Return ==
+0: contract TaskGateHook 0x737d65090269992CEFc8D765caf5C667aceB6880
+== Logs ==
+  chainId 46630
+  TaskGateHook 0x737d65090269992CEFc8D765caf5C667aceB6880
+  PoolManager 0x8366a39CC670B4001A1121B8F6A443A643e40951
+  owner 0x000000000000000000000000000000000000dEaD
+  0x000000000000000000000000000000000000000000000000000000000000157f
+## Setting up 1 EVM.
+==========================
+Chain 46630
+Estimated max fee per gas: 0.020000001 gwei
+Estimated base fee per gas: 0.01 gwei
+Estimated max priority fee per gas: 0.000000001 gwei
+Estimated total gas used for script: 3671349
+Estimated amount required: 0.000073426983671349 ETH
+==========================
+SIMULATION COMPLETE. To broadcast these transactions, add --broadcast and wallet configuration(s) to the previous command. See forge script --help for more.
+Transactions saved to: /workspace/tm-6bhk/repo/broadcast/DeployTaskGateHook.s.sol/46630/dry-run/run-latest.json
+Sensitive values saved to: /workspace/tm-6bhk/repo/cache/DeployTaskGateHook.s.sol/46630/dry-run/run-latest.json

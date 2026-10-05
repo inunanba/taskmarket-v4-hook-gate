@@ -1,0 +1,45 @@
+
+=== start anvil (31337) and local Taskmarket mock
+mock taskmarket on 127.0.0.1:8788 status=completed
+
+=== deploy local stack (PoolManager, tokens, routers, hook, swap-gated pool)
+hook=0xF041A7C341C6f7900D46A1E042DB0e32436b2880 pool=0xe9509f70d1b14dc1d05503398974d7e0b0f647c3f8d5d95c2eef617c103cdcd0 swapRouter=0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9
+
+=== swap WITHOUT authorization -> must fail
+rejected as expected
+
+=== adapter: authorize --submit (read, re-read, sign, preview, re-read, write)
+{
+  "ok": true,
+  "submitted": true,
+  "txHash": "0xd07f8e52e1c82766b4a76f866a448983b76a45ebd978580ffa2132118e04e718",
+  "preview": "OK",
+  "evidenceHash": "0xcd4d941931c85244e71e178fddcc513678cf1bf73da8384c2086190eccad84dd",
+  "observedAt": "1791187388",
+  "expiry": "1791187988",
+  "nonce": "43425632204284334737488028871610395424"
+}
+
+=== swap #1 with EMPTY hookData consumes the installed grant
+swap ok
+
+=== replaying the same signed binding is logged on-chain as BindingRejected(NONCE_USED)
+{"txHash":"0xfb15a7877489558e4bf80905973c1bebe6d9e1c67d2b7aa60f8bd05aac32b1b2","outcome":"rejected","reason":18,"reasonName":"NONCE_USED"}
+
+=== task drifts to 'disputed' on Taskmarket -> revoke-if-drifted revokes the grant
+{"action":"revoked","reason":"WRONG_STATUS"}
+
+=== swap #2 after revocation -> must fail (grant had 1 use left)
+rejected as expected
+
+=== adapter refuses to sign while task is 'disputed'
+{"ok":false,"code":"WRONG_STATUS"}
+
+=== on-chain event trail
+  BindingUpdated: 1
+  BindingRejected: 1
+  AuthorizationGranted: 1
+  BindingRevoked: 1
+
+=== raw Taskmarket responses preserved: 5 bodies in <tmpdir>
+E2E OK
